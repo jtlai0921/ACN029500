@@ -1,0 +1,13 @@
+C:\VB_CONSOLE\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\VB_CONSOLE\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\VB_CONSOLE\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\VB_CONSOLE\ConsoleApplication1\bin\Debug\ConsoleApplication1.xml
+C:\VB_CONSOLE\ConsoleApplication1\obj\Debug\ConsoleApplication1.Resources.resources
+C:\VB_CONSOLE\ConsoleApplication1\obj\Debug\ConsoleApplication1.vbproj.GenerateResource.Cache
+C:\VB_CONSOLE\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\VB_CONSOLE\ConsoleApplication1\obj\Debug\ConsoleApplication1.xml
+C:\VB_CONSOLE\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\VB_CONSOLE\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.manifest
+C:\VB_CONSOLE\ConsoleApplication1\bin\Debug\ConsoleApplication1.application
+C:\VB_CONSOLE\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe.manifest
+C:\VB_CONSOLE\ConsoleApplication1\obj\Debug\ConsoleApplication1.application

@@ -1,0 +1,4 @@
+Localhost\SqlExpress
+VBSQLDB
+VBUSER01
+abc-12345

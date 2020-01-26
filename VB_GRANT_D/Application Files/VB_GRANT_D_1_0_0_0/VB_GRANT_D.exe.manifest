@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="VB_GRANT_D.exe" version="1.0.0.0" publicKeyToken="b056ffb7ad9795a5" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="VB_GRANT_D" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="VB_GRANT_D.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC 資訊清單選項
+             如果您要變更 Windows 使用者帳戶控制層級，請將 
+            requestedExecutionLevel 節點取代為下列其中一項。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            指定 requestedExecutionLevel 節點將會停用檔案和登錄虛擬化。
+            如果您要針對回溯相容性使用檔案及登錄虛擬化，
+            請刪除 requestedExecutionLevel 節點。
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VB_GRANT_D.exe" size="142848">
+      <assemblyIdentity name="VB_GRANT_D" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>B8CemQkV6YgD1X7PvwWauISRq7cajJUmXqAgksyh/+s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="APPDATA\BC01.GIF" size="4681">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ihRtoj9jDyQXUR4mH1F415WQbIAa/F5TkC+Ds+wg/+g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MoveBottom_B.jpg" size="2502">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VwXyKHh5ENGsmSP1T86npC2Pl+HZzL0jj6MTfzKdLA4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MoveNext_B.jpg" size="2100">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lfgbF2jyzMxfyD6MLVpZ31djYHgMpMWZU+0ckaytA50=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MovePrev_B.jpg" size="1971">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>j6FZInZLxiAol1VOqClJo8GGhJF+5C4JG7S2ctq9v3A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MoveTop_B.jpg" size="2578">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5/QuR9ddNTawifwlRXahX3JuRc/F62M+HY4f+iDrVS8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MySQLLogin.txt" size="52">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1nm8smFjcPaazMx+SQYQHGyO6qRCP11PwMPNOfJw1YA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\Title_01.gif" size="6437">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YUKAh/a7uwe4Y56RY5cAYCaBVu037ZkPQO0HQPkwRco=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\Title_02.jpg" size="14388">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wurCUEvA7dx+kf62t2XTKg7R8Ik/Md8Pc1Rza8UQ2pA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VB_GRANT_D.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0UeIdteCM29dGVw07LmHp593fPbh0IN11GyN3f2uRA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- 可配合此應用程式使用的所有 Windows 版本的清單。
+      Windows 會自動選取最相容的環境。-->
+      <!-- 如果您的應用程式是設計成配合 Windows Vista 運作，請取消註解下列 supportedOS 節點-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- 如果您的應用程式是設計成配合 Windows 7 運作，請取消註解下列 supportedOS 節點-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- 如果您的應用程式是設計成配合 Windows 8 運作，請取消註解下列 supportedOS 節點-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- 如果您的應用程式是設計成配合 Windows 8.1 運作，請取消註解下列 supportedOS 節點-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=wwc002-pc\wwc002" issuerKeyHash="f07f3850a0dfdb4e2ad3b3517b587826d8610993" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>7EJkVHC0yv5wQt0jOdqLUJIxYna2S0MQpwgdNT9yqyE=</DigestValue></Reference></SignedInfo><SignatureValue>aMn0gBQ+t7TxMP98Nnq0PyK00rEofLM0saepd0+qG/T1h1FXNtSXGirHqvDxa2hgPdYFGQMfKjm8/j8hSTK+k0a4GIZHknkIts03nlrGh/WhlkqfGbVlk4uZpQ7zWZXYEITm1ZlMFhYqgmBsvFUyTli7oqLXQ1DZXUpuxrFNSyc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2qBLDRgNWJWF/zQVnLyMiIK3khzIfTeoAmdT9PJp0NZ0aOMXlAkHSjzl6yieKKnPETLuBghDm/o2X7l14w8rKd0bgLIUrjjY+S/wSOcVu2k5hHvQof7HzTKlXTOBUkwXOGzoSyJOiuGPabv7kBx0EyHaqHs6waGfDDSLx8xnuNU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="21ab723f351d08a710434bb676623192508bda3923dd4270fecab470546442ec" Description="" Url=""><as:assemblyIdentity name="VB_GRANT_D.exe" version="1.0.0.0" publicKeyToken="b056ffb7ad9795a5" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=wwc002-pc\wwc002</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>TRwyRTYrjRdxm6sGTfKr2KxibAqNinmsavY0sLvJ0uE=</DigestValue></Reference></SignedInfo><SignatureValue>BDtOouNXa8GtdrbmPQcNZhLkR+IbJULTNnSUBNfOPJyY1WWvgeFBHUNS4IXj2n4McH/J0q4o68ZK81PYwCM8aZBJqFo3T7oeV/57Uu2ZMk0y5afUhFvA65X94cvxIVLh6mhWJgqdc5eMnQ8Trq9xfDTVMvzy7+KuIyTxWDDVb2I=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2qBLDRgNWJWF/zQVnLyMiIK3khzIfTeoAmdT9PJp0NZ0aOMXlAkHSjzl6yieKKnPETLuBghDm/o2X7l14w8rKd0bgLIUrjjY+S/wSOcVu2k5hHvQof7HzTKlXTOBUkwXOGzoSyJOiuGPabv7kBx0EyHaqHs6waGfDDSLx8xnuNU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQYi0ApXWpVItFYAlxbpVIrjANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAAdwB3AGMAMAAwADIALQBwAGMAXAB3AHcAYwAwADAAMjAeFw0xNTA5MDUwMzUxMjhaFw0xNjA5MDQwOTUxMjhaMCsxKTAnBgNVBAMeIAB3AHcAYwAwADAAMgAtAHAAYwBcAHcAdwBjADAAMAAyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDaoEsNGA1YlYX/NBWcvIyIgreSHMh9N6gCZ1P08mnQ1nRo4xeUCQdKPOXrKJ4oqc8RMu4GCEOb+jZfuXXjDysp3RuAshSuONj5L/BI5xW7aTmEe9Ch/sfNMqVdM4FSTBc4bOhLIk6K4Y9pu/uQHHQTIdqoezrBoZ8MNIvHzGe41QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAEFMLG0j/fYMyuAQkdR2z4BQr/Gq+KyXPfKVN9frfiMgpKf6HU7sitopC/isxNSVyBVSkAdRlVRdSGQSH/YDUNBmdDVPCN/UnhcJc/axIa9lIAIK9Fev1LOSVAVWgOaQ5Dej2hwJMcZKBa4nJIfx7/kkh+o7+y5vYehVuKeGRqYH</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

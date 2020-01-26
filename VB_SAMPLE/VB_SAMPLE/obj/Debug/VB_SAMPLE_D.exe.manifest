@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="VB_SAMPLE_D.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="pen_01.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="VB_SAMPLE_D" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="VB_SAMPLE_D.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC 資訊清單選項
+             如果您要變更 Windows 使用者帳戶控制層級，請將 
+            requestedExecutionLevel 節點取代為下列其中一項（● ● ● 錯誤說明，ClickOnce 不支援要求執行層級 'requireAdministrator'）。
+
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            指定 requestedExecutionLevel 節點將會停用檔案和登錄虛擬化。
+            如果您要針對回溯相容性使用檔案及登錄虛擬化，
+            請刪除 requestedExecutionLevel 節點。
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.Types.dll" size="392896">
+      <assemblyIdentity name="Microsoft.SqlServer.Types" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>g0uPPSp1+4yyv5ZCerojXZO6R0+rDi1fljO+PXSESY4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\Microsoft.SqlServer.Types.resources.dll" size="48832">
+      <assemblyIdentity name="Microsoft.SqlServer.Types.resources" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UJJLuUt4AGx1TtW2T2NPJvhz8J8WnhCHgZIeWdUbzM8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\Microsoft.SqlServer.Types.resources.dll" size="48832">
+      <assemblyIdentity name="Microsoft.SqlServer.Types.resources" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Dj4oCZxkotTq8V1q3OEHWL9GGNwBMKkbQHhpjKo3p6E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\Microsoft.SqlServer.Types.resources.dll" size="48832">
+      <assemblyIdentity name="Microsoft.SqlServer.Types.resources" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3zGFo/QtpPei/2wKIK0VJFdgIqVkFUbqI5hf9MYB29w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it\Microsoft.SqlServer.Types.resources.dll" size="48832">
+      <assemblyIdentity name="Microsoft.SqlServer.Types.resources" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="it" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ppRJkyqXtU+tgLK2UdA5fgaOWc7bhch9s13ENJe9Oc4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ja\Microsoft.SqlServer.Types.resources.dll" size="52928">
+      <assemblyIdentity name="Microsoft.SqlServer.Types.resources" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="ja" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Y6PgxTVOmgDAGn7ZGBvj6o2ICV2lZY/b6bdlS2F/LUA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ko\Microsoft.SqlServer.Types.resources.dll" size="48832">
+      <assemblyIdentity name="Microsoft.SqlServer.Types.resources" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="ko" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VWYYSHuK8ouyp/Cpb+M6pyVX1xDJZztyMIBHrBXeLxM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt\Microsoft.SqlServer.Types.resources.dll" size="48832">
+      <assemblyIdentity name="Microsoft.SqlServer.Types.resources" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="pt" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XuZwyuZzdULagqdb82N32brulQK8JnFrTDXK/P2LuAs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\Microsoft.SqlServer.Types.resources.dll" size="57024">
+      <assemblyIdentity name="Microsoft.SqlServer.Types.resources" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>n1DgHag7jhmiL+m5L+BMZ4D1qC+beSkJBzSBupZp7+s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-Hans\Microsoft.SqlServer.Types.resources.dll" size="36032">
+      <assemblyIdentity name="Microsoft.SqlServer.Types.resources" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="zh-CHS" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3maK3+bflAYNw5UgYM884ncMNemTI8LdD9zBx65ncPU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-Hant\Microsoft.SqlServer.Types.resources.dll" size="36032">
+      <assemblyIdentity name="Microsoft.SqlServer.Types.resources" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="zh-CHT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LUYj+cHUinsxbO+qcNIeJaaKodAOPJFjdkmhn0Vtus4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TaipeiVB.dll" size="33280">
+      <assemblyIdentity name="TaipeiVB" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9L/80t14tAjsz9K/+XrxcWx5afywPEVTCdJ4ceROgt0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VB_SAMPLE_D.exe" size="838656">
+      <assemblyIdentity name="VB_SAMPLE_D" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zVmeAKJk5OyRYTUG45jbhQNA93QuKL4LDoIWjFegedQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="APPDATA\bgg02.jpg" size="1962">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JcmczrRam+J96nTdIq/wsTcXeulj9sc75bsMlnyFf2w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\bgg03.jpg" size="1964">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SZNe67x4FhO/KvtsQKexTZgHaLvyqS1wTihGnLOZ81I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\bgg19.jpg" size="1713">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>loAxN+vvFjJ6C4MymZl/H+TGkOVIIIoIO+Y5RnS7jgc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\bgg20.jpg" size="1729">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dSvmvHBDIMCYbwl+V55pky+lMJCl4hvaDW954kpCy30=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\bgg21.jpg" size="1502">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>F4+tWnPzncMp5qXRcijdZ7ZZG4qUCxpViaCL3YB6EPA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\bgg22.jpg" size="1553">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/NhB0WTYcKQiRTBXBe2qg0tMKIXmxBbsIkJI7t+a7mI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\DogSale.csv" size="1847740">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>As+o+0ykLOynh5bHzN9uzxdO9WDtxLNcCD4ihHzYGlA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\Logo_02.gif" size="5632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tGx59WicPVfKH4xiwSHucqBJiuQo++uh4PixE6YU/to=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MaterialUsed.mdb" size="618496">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lRsRAODGZYO8/6HSGQW8hBcoGW3O7Zm3Sj/QEY9szpQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MyDataGridViewRowHeight.txt" size="4">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9ryg5/RqlL0zSf24ZRHL7EqQkeQJti3S1rjB/bmjzgA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MyDataGridViewSelection.txt" size="79">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gFAAwR/r9sdByIHPDIsqlipQZNzjng7OEx5orLca4ww=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MyDataGridViewStyle.txt" size="44">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CEq6bqKc9VDXCQEsME4DU5WFXU3QorRPnHmWTCN+B6w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MyFormSize.txt" size="20">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SluY0NTjy1m9eCXFDBR0bVSlpvSJqtx/LdXnPSWo330=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MySQLLogin.txt" size="52">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1nm8smFjcPaazMx+SQYQHGyO6qRCP11PwMPNOfJw1YA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MyTestFile01.txt" size="29">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HYI2k8yfC4+2kfIPIYXI4GoUNmRGlN+7x0h2A6ilLOo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\MyVideoList.txt" size="174">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>V0nylRcntQoPyDVUWpZJp9MmWswDO9xD5p3B1HA/izo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\RichTextBoxLink.rtf" size="9933">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QocfrBkScxQYx2iC4NGUO33oJLQOPTRPrTOCe07s26Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\StampCollection.mdb" size="5197824">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HMnMiAYmgZnaIYXPgun321IrKdcHxXlJ5kd7ARIm31E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\TAB_WorkKind.mdb" size="188416">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yoRFdU8ftl6ciID/0cEWXj2OJWsR19YdEWNRpHnnO8g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\TAB_ZIPCODE.mdb" size="159744">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TfXJzmSfqqikEB9iXzzYNoPTOXb52fq66G5iMWOcnfY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\Test_02_BK.xls" size="16896">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ucgDfA2FLJRxieYBs5PGclsAGTPBwkichpK0BJ6Q/mU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\Test_03_BK.xlsx" size="9696">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>onnzkMiIFjwOOGbdl54CWe9bPVGeugsTi5e5eJQvWwg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\Test_Stamp_BK.xls" size="16384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DWN3WhI9U2DwzkGl98/2pbcLvbpp9SMJcvAw8gTBFzU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\Title_01.gif" size="6437">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YUKAh/a7uwe4Y56RY5cAYCaBVu037ZkPQO0HQPkwRco=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\Title_02.jpg" size="14388">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wurCUEvA7dx+kf62t2XTKg7R8Ik/Md8Pc1Rza8UQ2pA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\VBACCESSDB.accdb" size="1011712">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dTqcIjTJiwcPdxW1CGCJOeERgORGRbkVPhqbVcVlvDQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\WorkOrder.mdb" size="454656">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZXYlcY9m6IRapGkCdNg8J0fBWe4NIskv6t88Cv5iKhM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\比對_員工號.xls" size="16384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9kkjr6mdwhyGH3GkVZx/qABubsmBvpYHLMpfGBAoac4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\比對_部門代號.xls" size="16384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>L6lzrUCD0FvqWETWmMHYyglP0vWUV4vMAUtLkFkbO+o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\比對_職稱.xls" size="16384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ecVi/MMRF2b+pVay89wFPUxFku57C8zgHdsnlcPaZJw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\水果銷售統計.xlsx" size="12578">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dnz9pHh0E0+ggTeLl3h4d6coJRnNElEaOAL1oHZ3fDs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\字碼指標清單.xlsx" size="11477">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oN5e3FyztvMbjjDcdFXrJlXHiwIXjBcxTsuhszG5AxQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\魚類銷售統計.xlsx" size="12382">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QwVd1htA37kEbboKsb7v2DmLO/A/ShuqLDxjtqrAq9c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\圖書庫存統計.xlsx" size="13200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iO7iI7izfE+NNo0Zva5p8+Od0+7HyN4+CEY89pDFwVw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\對照表_部門代號及名稱.xls" size="13824">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>I1ByI9goz0Fu5rf/YCxJkf0rQduxYL+shbF5lBOwq1U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\範例A_銷售基本檔.xls" size="17408">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3kpi6uNHf35GRtqj7ZFEOsAM7TtuLStqPZXlauYxfiE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="APPDATA\範例B_銷售紀錄檔.xls" size="13824">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rCQXFuxDO05bPTLfhiyefHuedx5PuKlTl76AWlXQcLg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pen_01.ico" size="9662">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RA9WpaHm2vykHOxGgxRACF/m3XR80GuMvekxsvqGt/I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VB_SAMPLE_D.exe.config" size="2777">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rHAtT9OkL66/lSmqqqyljQuxSelVcjAQqvMTsYRjuko=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- 可配合此應用程式使用的所有 Windows 版本的清單。
+      Windows 會自動選取最相容的環境。-->
+      <!-- 如果您的應用程式是設計成配合 Windows Vista 運作，請取消註解下列 supportedOS 節點-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- 如果您的應用程式是設計成配合 Windows 7 運作，請取消註解下列 supportedOS 節點-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- 如果您的應用程式是設計成配合 Windows 8 運作，請取消註解下列 supportedOS 節點-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- 如果您的應用程式是設計成配合 Windows 8.1 運作，請取消註解下列 supportedOS 節點-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+</asmv1:assembly>

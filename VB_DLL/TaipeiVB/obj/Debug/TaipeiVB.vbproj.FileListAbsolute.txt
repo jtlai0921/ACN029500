@@ -1,0 +1,9 @@
+C:\VB_DLL\TaipeiVB\bin\Debug\TaipeiVB.dll
+C:\VB_DLL\TaipeiVB\bin\Debug\TaipeiVB.pdb
+C:\VB_DLL\TaipeiVB\bin\Debug\TaipeiVB.xml
+C:\VB_DLL\TaipeiVB\obj\Debug\TaipeiVB.Resources.resources
+C:\VB_DLL\TaipeiVB\obj\Debug\TaipeiVB.vbproj.GenerateResource.Cache
+C:\VB_DLL\TaipeiVB\obj\Debug\TaipeiVB.dll
+C:\VB_DLL\TaipeiVB\obj\Debug\TaipeiVB.xml
+C:\VB_DLL\TaipeiVB\obj\Debug\TaipeiVB.pdb
+C:\VB_DLL\TaipeiVB\obj\Debug\TaipeiVB.vbprojResolveAssemblyReference.cache

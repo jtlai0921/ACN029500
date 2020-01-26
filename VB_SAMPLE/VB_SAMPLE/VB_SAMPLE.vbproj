@@ -1,0 +1,829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CF870B3-558E-4C98-995C-9F1718880826}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VB_SAMPLE.My.MyApplication</StartupObject>
+    <RootNamespace>VB_SAMPLE</RootNamespace>
+    <AssemblyName>VB_SAMPLE_D</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\VB_SAMPLE_D\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>VB應用系統設計寶典</ProductName>
+    <PublisherName>台北好比應用系統</PublisherName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VB_SAMPLE_D.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VB_SAMPLE_D.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>pen_01.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8A8903145EA3802A0D2D57B121A31D84FB53DFED</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>VB_SAMPLE_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.Types, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="TaipeiVB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\VB_DLL\TaipeiVB\bin\Debug\TaipeiVB.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="F_ACCESS01.Designer.vb">
+      <DependentUpon>F_ACCESS01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_ACCESS01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ACCESS02.Designer.vb">
+      <DependentUpon>F_ACCESS02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_ACCESS02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Backgroundwork.Designer.vb">
+      <DependentUpon>F_Backgroundwork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Backgroundwork.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_base.Designer.vb">
+      <DependentUpon>F_base.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_base.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_chart.Designer.vb">
+      <DependentUpon>F_chart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_chart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Class01.Designer.vb">
+      <DependentUpon>F_Class01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Class01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Color.Designer.vb">
+      <DependentUpon>F_Color.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Color.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DGVselection.Designer.vb">
+      <DependentUpon>F_DGVselection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_DGVselection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DLL.Designer.vb">
+      <DependentUpon>F_DLL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_DLL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DLL01.Designer.vb">
+      <DependentUpon>F_DLL01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_DLL01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_EXCEL01.Designer.vb">
+      <DependentUpon>F_EXCEL01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_EXCEL01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_FileSystem.Designer.vb">
+      <DependentUpon>F_FileSystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_FileSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Input_1.Designer.vb">
+      <DependentUpon>F_Input_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Input_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Layout.Designer.vb">
+      <DependentUpon>F_Layout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Layout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Layout_2.Designer.vb">
+      <DependentUpon>F_Layout_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Layout_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_LIST_INTEREST.Designer.vb">
+      <DependentUpon>F_LIST_INTEREST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_LIST_INTEREST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_menu.Designer.vb">
+      <DependentUpon>F_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Query.Designer.vb">
+      <DependentUpon>F_Query.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Query.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QueryAdvanced.Designer.vb">
+      <DependentUpon>F_QueryAdvanced.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_QueryAdvanced.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QueryAdvanceResult.Designer.vb">
+      <DependentUpon>F_QueryAdvanceResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_QueryAdvanceResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_QueryResult.Designer.vb">
+      <DependentUpon>F_QueryResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_QueryResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Query_1.Designer.vb">
+      <DependentUpon>F_Query_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Query_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Query_2.Designer.vb">
+      <DependentUpon>F_Query_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Query_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Query_3.Designer.vb">
+      <DependentUpon>F_Query_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Query_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Query_5.Designer.vb">
+      <DependentUpon>F_Query_5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Query_5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Save01.Designer.vb">
+      <DependentUpon>F_Save01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Save01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SheetChoice.Designer.vb">
+      <DependentUpon>F_SheetChoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_SheetChoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SQL01.Designer.vb">
+      <DependentUpon>F_SQL01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_SQL01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SQL02.Designer.vb">
+      <DependentUpon>F_SQL02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_SQL02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SQL_Login.Designer.vb">
+      <DependentUpon>F_SQL_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_SQL_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TableDept.Designer.vb">
+      <DependentUpon>F_TableDept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_TableDept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TableGrade.Designer.vb">
+      <DependentUpon>F_TableGrade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_TableGrade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TableImport.Designer.vb">
+      <DependentUpon>F_TableImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_TableImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TableMaintMenu.Designer.vb">
+      <DependentUpon>F_TableMaintMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_TableMaintMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TableTitle.Designer.vb">
+      <DependentUpon>F_TableTitle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_TableTitle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TempFile.Designer.vb">
+      <DependentUpon>F_TempFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_TempFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_wait.Designer.vb">
+      <DependentUpon>F_wait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_wait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyClass_AccessRead.vb" />
+    <Compile Include="MyClass_ButtonClose.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyClass_ButtonExit.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyClass_ButtonGeneral.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyClass_Calendar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyClass_DataGridView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyClass_SqlServerRead.vb" />
+    <Compile Include="TypeReportSource.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="F_ACCESS01.resx">
+      <DependentUpon>F_ACCESS01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ACCESS02.resx">
+      <DependentUpon>F_ACCESS02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Backgroundwork.resx">
+      <DependentUpon>F_Backgroundwork.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_base.resx">
+      <DependentUpon>F_base.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_chart.resx">
+      <DependentUpon>F_chart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Class01.resx">
+      <DependentUpon>F_Class01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Color.resx">
+      <DependentUpon>F_Color.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DGVselection.resx">
+      <DependentUpon>F_DGVselection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DLL.resx">
+      <DependentUpon>F_DLL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DLL01.resx">
+      <DependentUpon>F_DLL01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_EXCEL01.resx">
+      <DependentUpon>F_EXCEL01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_FileSystem.resx">
+      <DependentUpon>F_FileSystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Input_1.resx">
+      <DependentUpon>F_Input_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Layout.resx">
+      <DependentUpon>F_Layout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Layout_2.resx">
+      <DependentUpon>F_Layout_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_LIST_INTEREST.resx">
+      <DependentUpon>F_LIST_INTEREST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_menu.resx">
+      <DependentUpon>F_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Query.resx">
+      <DependentUpon>F_Query.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QueryAdvanced.resx">
+      <DependentUpon>F_QueryAdvanced.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QueryAdvanceResult.resx">
+      <DependentUpon>F_QueryAdvanceResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_QueryResult.resx">
+      <DependentUpon>F_QueryResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Query_1.resx">
+      <DependentUpon>F_Query_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Query_2.resx">
+      <DependentUpon>F_Query_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Query_3.resx">
+      <DependentUpon>F_Query_3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Query_5.resx">
+      <DependentUpon>F_Query_5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Save01.resx">
+      <DependentUpon>F_Save01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SheetChoice.resx">
+      <DependentUpon>F_SheetChoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SQL01.resx">
+      <DependentUpon>F_SQL01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SQL02.resx">
+      <DependentUpon>F_SQL02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SQL_Login.resx">
+      <DependentUpon>F_SQL_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TableDept.resx">
+      <DependentUpon>F_TableDept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TableGrade.resx">
+      <DependentUpon>F_TableGrade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TableImport.resx">
+      <DependentUpon>F_TableImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TableMaintMenu.resx">
+      <DependentUpon>F_TableMaintMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TableTitle.resx">
+      <DependentUpon>F_TableTitle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TempFile.resx">
+      <DependentUpon>F_TempFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_wait.resx">
+      <DependentUpon>F_wait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="APPDATA\bgg02.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\bgg03.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\bgg19.jpg" />
+    <Content Include="APPDATA\bgg20.jpg" />
+    <Content Include="APPDATA\bgg21.jpg" />
+    <Content Include="APPDATA\bgg22.jpg" />
+    <Content Include="APPDATA\Logo_02.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\MaterialUsed.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\MyDataGridViewRowHeight.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\MyDataGridViewSelection.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\MyDataGridViewStyle.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\MyFormSize.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\MySQLLogin.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\MyTestFile01.txt" />
+    <Content Include="APPDATA\MyVideoList.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\StampCollection.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\TAB_WorkKind.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\TAB_ZIPCODE.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\Title_01.gif" />
+    <Content Include="APPDATA\Title_02.jpg" />
+    <Content Include="APPDATA\VBACCESSDB.accdb" />
+    <Content Include="APPDATA\WorkOrder.mdb" />
+    <Content Include="APPDATA\範例A_銷售基本檔.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\範例B_銷售紀錄檔.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\對照表_部門代號及名稱.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\DogSale.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="APPDATA\字碼指標清單.xlsx" />
+    <Content Include="APPDATA\水果銷售統計.xlsx" />
+    <Content Include="APPDATA\Test_02_BK.xls" />
+    <Content Include="APPDATA\Test_Stamp_BK.xls" />
+    <Content Include="APPDATA\Test_03_BK.xlsx" />
+    <Content Include="APPDATA\比對_員工號.xls" />
+    <Content Include="APPDATA\比對_職稱.xls" />
+    <Content Include="APPDATA\比對_部門代號.xls" />
+    <Content Include="APPDATA\RichTextBoxLink.rtf" />
+    <Content Include="APPDATA\圖書庫存統計.xlsx" />
+    <Content Include="APPDATA\魚類銷售統計.xlsx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="VB_SAMPLE_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pen_01.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="APPDATA\DogSale.csv">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\MaterialUsed.mdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\MyDataGridViewRowHeight.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\MyDataGridViewSelection.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\MyDataGridViewStyle.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\MyFormSize.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\MySQLLogin.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\MyTestFile01.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\MyVideoList.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\RichTextBoxLink.rtf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\StampCollection.mdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\TAB_WorkKind.mdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\TAB_ZIPCODE.mdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\Test_02_BK.xls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\Test_03_BK.xlsx">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\Test_Stamp_BK.xls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\VBACCESSDB.accdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\WorkOrder.mdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="APPDATA\對照表_部門代號及名稱.xls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
